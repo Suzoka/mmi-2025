@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(CharacterController))]
 
@@ -28,6 +29,11 @@ public class NewBehaviourScript : MonoBehaviour
             Debug.Log("Dead");
             Respawn();
         }
+    }
+
+    public void OnRespawn(InputValue value)
+    {
+        Respawn();
     }
 
     private void Respawn()
