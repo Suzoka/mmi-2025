@@ -24,7 +24,6 @@ public class Approche : MonoBehaviour
         if (other.gameObject.tag == PLAYER_TAG)
         {
             Debug.Log("Approche");
-            
         }
     }
 }
